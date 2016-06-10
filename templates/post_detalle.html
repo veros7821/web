@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Bienvenidos al sitio oficial de la Escuela Normal Superior Dr. Antonio Sagarna</title>
+</head>
+<body>
+    <div>
+	<h1><a href="">Sagarna.Sites</a></h1>
+    </div>
+<div class="Posteo">
+     {% if posteo.fecha_creacion %}
+                <div class="date">
+		{{ posteo.id}}
+		{{ posteo.fecha_public}}
+		</div>
+    {% endif %}
+    <h1>{{ posteo.titulo }}</h1>
+    <p>{{ posteo.texto|linebreaks }}</p>
+</div>
